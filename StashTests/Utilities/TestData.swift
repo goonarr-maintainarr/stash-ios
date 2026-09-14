@@ -89,3 +89,37 @@ extension Scene {
         )
     }
 }
+
+extension Stats {
+    static func testStats(
+        scene_count: Int = 100,
+        scenes_size: Int64 = 1000000000,
+        scenes_duration: Double = 36000,
+        scenes_played: Int = 50,
+        performer_count: Int = 20,
+        studio_count: Int = 10,
+        tag_count: Int = 30
+    ) -> Stats {
+        let json = """
+        {
+            "scene_count": \(scene_count),
+            "scenes_size": \(scenes_size),
+            "scenes_duration": \(scenes_duration),
+            "image_count": 0,
+            "images_size": 0,
+            "gallery_count": 0,
+            "performer_count": \(performer_count),
+            "studio_count": \(studio_count),
+            "group_count": 0,
+            "movie_count": 0,
+            "tag_count": \(tag_count),
+            "total_o_count": 10,
+            "total_play_duration": 5000,
+            "total_play_count": 50,
+            "scenes_played": \(scenes_played)
+        }
+        """
+        return try! JSONDecoder().decode(Stats.self, from: json.data(using: .utf8)!)
+    }
+}
+

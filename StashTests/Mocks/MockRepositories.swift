@@ -450,3 +450,45 @@ class MockStatsRepository: StatsRepositoryProtocol {
         return stats
     }
 }
+
+// MARK: - Mock Settings Repository
+
+class MockSettingsRepository: SettingsRepositoryProtocol, @unchecked Sendable {
+    var shouldThrowError = false
+    var errorToThrow: Error = NSError(domain: "MockSettingsRepository", code: 1, userInfo: [NSLocalizedDescriptionKey: "Settings error"])
+    var testStashConnectionCalled = false
+    var testStashDBCalled = false
+    var triggerScanCalled = false
+    var triggerGenerationCalled = false
+    var mockTaggerConfig: TaggerConfig = TaggerConfig()
+    
+    func testStashConnection(url: URL, apiKey: String) async throws {
+        testStashConnectionCalled = true
+        if shouldThrowError { throw errorToThrow }
+    }
+    
+    func testStashDBConnection(apiKey: String) async throws {
+        testStashDBCalled = true
+        if shouldThrowError { throw errorToThrow }
+    }
+    
+    func triggerScan(options: ScanOptions) async throws {
+        triggerScanCalled = true
+        if shouldThrowError { throw errorToThrow }
+    }
+    
+    func triggerGeneration(options: GenerationOptions) async throws {
+        triggerGenerationCalled = true
+        if shouldThrowError { throw errorToThrow }
+    }
+    
+    func fetchTaggerConfig() async throws -> TaggerConfig {
+        if shouldThrowError { throw errorToThrow }
+        return mockTaggerConfig
+    }
+    
+    func saveTaggerConfig(_ config: TaggerConfig) async throws {
+        if shouldThrowError { throw errorToThrow }
+        mockTaggerConfig = config
+    }
+}
