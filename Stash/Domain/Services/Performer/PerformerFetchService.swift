@@ -225,7 +225,7 @@ class PerformerFetchService: StashService, @unchecked Sendable {
             
             // Report progress
             if let handler = progressHandler {
-                handler(allPerformers.count, totalCount)
+                await handler(allPerformers.count, totalCount)
             }
         }
         
