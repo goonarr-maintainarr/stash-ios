@@ -71,8 +71,9 @@ final class WhisparrQueueService {
     // MARK: - Public Methods
     
     func fetchQueue(showLoading: Bool = true) async {
-        guard !settingsStore.whisparrUrl.isEmpty,
-              !settingsStore.whisparrApiKey.isEmpty else {
+        let (whisparrUrl, whisparrApiKey) = await (settingsStore.whisparrUrl, settingsStore.whisparrApiKey)
+        guard !whisparrUrl.isEmpty,
+              !whisparrApiKey.isEmpty else {
             return
         }
         
@@ -82,8 +83,8 @@ final class WhisparrQueueService {
         
         do {
             let queueItems = try await whisparrClient.fetchQueue(
-                url: settingsStore.whisparrUrl,
-                apiKey: settingsStore.whisparrApiKey
+                url: whisparrUrl,
+                apiKey: whisparrApiKey
             )
             
             
@@ -101,16 +102,17 @@ final class WhisparrQueueService {
     
     /// Combined refresh logic to run in background loop
     private func refreshDownloadClientsAndQueue() async {
-        guard !settingsStore.whisparrUrl.isEmpty,
-              !settingsStore.whisparrApiKey.isEmpty else {
+        let (whisparrUrl, whisparrApiKey) = await (settingsStore.whisparrUrl, settingsStore.whisparrApiKey)
+        guard !whisparrUrl.isEmpty,
+              !whisparrApiKey.isEmpty else {
             return
         }
         
         // 1. Trigger Refresh (Always runs with every poll now)
         do {
             try await whisparrClient.refreshDownloads(
-                url: settingsStore.whisparrUrl,
-                apiKey: settingsStore.whisparrApiKey
+                url: whisparrUrl,
+                apiKey: whisparrApiKey
             )
             // lastClientRefresh = Date() // Not strictly needed if not throttling, but good for debug if we kept it
         } catch {
@@ -162,10 +164,11 @@ final class WhisparrQueueService {
     }
     
     func removeFromQueue(itemId: Int, removeFromClient: Bool = true, blocklist: Bool = false) async throws {
+        let (whisparrUrl, whisparrApiKey) = await (settingsStore.whisparrUrl, settingsStore.whisparrApiKey)
         try await whisparrClient.removeQueueItem(
             id: itemId,
-            url: settingsStore.whisparrUrl,
-            apiKey: settingsStore.whisparrApiKey,
+            url: whisparrUrl,
+            apiKey: whisparrApiKey,
             removeFromClient: removeFromClient,
             blocklist: blocklist
         )
@@ -183,11 +186,12 @@ final class WhisparrQueueService {
     
     private func refreshCompletedMovie(movieId: Int) async {
         do {
+            let (whisparrUrl, whisparrApiKey) = await (settingsStore.whisparrUrl, settingsStore.whisparrApiKey)
             // Fetch the updated movie from API
             let updatedMovie = try await whisparrClient.fetchScene(
                 id: movieId,
-                url: settingsStore.whisparrUrl,
-                apiKey: settingsStore.whisparrApiKey
+                url: whisparrUrl,
+                apiKey: whisparrApiKey
             )
             
             // Save to database
