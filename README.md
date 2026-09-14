@@ -2,6 +2,8 @@
 
 A native iOS client for [Stash](https://stashapp.cc/), built with SwiftUI and featuring deep integration with Whisparr and StashDB. Provides a modern, feature-rich interface for browsing, managing, and streaming content from your Stash media server.
 
+[![iOS CI](https://github.com/goonarr-maintainarr/stash-ios/actions/workflows/ci.yml/badge.svg)](https://github.com/goonarr-maintainarr/stash-ios/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/goonarr-maintainarr/stash-ios)](https://github.com/goonarr-maintainarr/stash-ios/releases/latest)
 [![Swift](https://img.shields.io/badge/Swift-6.0+-orange.svg)](https://swift.org)
 [![iOS](https://img.shields.io/badge/iOS-18.0+-blue.svg)](https://www.apple.com/ios/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
