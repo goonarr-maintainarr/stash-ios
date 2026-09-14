@@ -68,4 +68,3 @@ build_output.txt
 .agent/
 .gemini/
 .antigravityignore
-Stash/DI/Secrets.swift

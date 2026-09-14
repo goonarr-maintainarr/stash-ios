@@ -4,6 +4,7 @@ import Combine
 
 /// Central container for application dependencies to replace singletons
 /// Central container for application dependencies to replace singletons
+@MainActor
 class DependencyContainer: ObservableObject {
     @Published var settingsStore: SettingsStore
     

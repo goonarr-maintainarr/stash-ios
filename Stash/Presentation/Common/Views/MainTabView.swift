@@ -22,6 +22,7 @@ struct MainTabView: View {
     @State private var toastType: ToastView.ToastType = .info
     
     // ViewModel Factory to ensure single initialization
+    @MainActor
     class ViewModelFactory: ObservableObject {
         let container: DependencyContainer
         
