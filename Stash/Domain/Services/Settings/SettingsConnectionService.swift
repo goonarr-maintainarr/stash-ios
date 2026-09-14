@@ -44,8 +44,9 @@ class SettingsConnectionService: @unchecked Sendable {
             throw AppError.repository(.invalidConfiguration)
         }
         
-        guard let url = URL(string: settingsStore.stashDBUrl) else {
-            throw AppError.network(.invalidURL(settingsStore.stashDBUrl))
+        let stashDBUrl = await settingsStore.stashDBUrl
+        guard let url = URL(string: stashDBUrl) else {
+            throw AppError.network(.invalidURL(stashDBUrl))
         }
         
         
