@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F25C70D2EE0AB94009FDBD0 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 3F25C70C2EE0AB94009FDBD0 /* Nuke */; };
+		3F25C70F2EE0AB94009FDBD0 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3F25C70E2EE0AB94009FDBD0 /* NukeUI */; };
+		3F25C7122EE0AD81009FDBD0 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 3F25C7112EE0AD81009FDBD0 /* GRDB */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F25C7C02EE371C7009FDBD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA0B83D2EDAB431000346E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA0B8442EDAB431000346E4;
+			remoteInfo = Stash;
+		};
+		3FB4958C2EDCEB92006B6AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA0B83D2EDAB431000346E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA0B8442EDAB431000346E4;
+			remoteInfo = Stash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F25C7BA2EE371C7009FDBD0 /* StashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA0B8452EDAB431000346E4 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB495882EDCEB92006B6AD5 /* StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3FA0B8472EDAB431000346E4 /* Stash */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Stash;
+			sourceTree = "<group>";
+		};
+		3FB495892EDCEB92006B6AD5 /* StashTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StashTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F25C7B72EE371C7009FDBD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA0B8422EDAB431000346E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F25C7122EE0AD81009FDBD0 /* GRDB in Frameworks */,
+				3F25C70D2EE0AB94009FDBD0 /* Nuke in Frameworks */,
+				3F25C70F2EE0AB94009FDBD0 /* NukeUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB495852EDCEB92006B6AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FA0B83C2EDAB431000346E4 = {
+			isa = PBXGroup;
+			children = (
+				3FA0B8472EDAB431000346E4 /* Stash */,
+				3FB495892EDCEB92006B6AD5 /* StashTests */,
+				3FA0B8462EDAB431000346E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FA0B8462EDAB431000346E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FA0B8452EDAB431000346E4 /* Stash.app */,
+				3FB495882EDCEB92006B6AD5 /* StashTests.xctest */,
+				3F25C7BA2EE371C7009FDBD0 /* StashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F25C7B92EE371C7009FDBD0 /* StashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F25C7C22EE371C7009FDBD0 /* Build configuration list for PBXNativeTarget "StashUITests" */;
+			buildPhases = (
+				3F25C7B62EE371C7009FDBD0 /* Sources */,
+				3F25C7B72EE371C7009FDBD0 /* Frameworks */,
+				3F25C7B82EE371C7009FDBD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F25C7C12EE371C7009FDBD0 /* PBXTargetDependency */,
+			);
+			name = StashUITests;
+			packageProductDependencies = (
+			);
+			productName = StashUITests;
+			productReference = 3F25C7BA2EE371C7009FDBD0 /* StashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3FA0B8442EDAB431000346E4 /* Stash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA0B8502EDAB433000346E4 /* Build configuration list for PBXNativeTarget "Stash" */;
+			buildPhases = (
+				3FA0B8412EDAB431000346E4 /* Sources */,
+				3FA0B8422EDAB431000346E4 /* Frameworks */,
+				3FA0B8432EDAB431000346E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3FA0B8472EDAB431000346E4 /* Stash */,
+			);
+			name = Stash;
+			packageProductDependencies = (
+				3F25C70C2EE0AB94009FDBD0 /* Nuke */,
+				3F25C70E2EE0AB94009FDBD0 /* NukeUI */,
+				3F25C7112EE0AD81009FDBD0 /* GRDB */,
+			);
+			productName = Stash;
+			productReference = 3FA0B8452EDAB431000346E4 /* Stash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FB495872EDCEB92006B6AD5 /* StashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB4958E2EDCEB92006B6AD5 /* Build configuration list for PBXNativeTarget "StashTests" */;
+			buildPhases = (
+				3FB495842EDCEB92006B6AD5 /* Sources */,
+				3FB495852EDCEB92006B6AD5 /* Frameworks */,
+				3FB495862EDCEB92006B6AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FB4958D2EDCEB92006B6AD5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3FB495892EDCEB92006B6AD5 /* StashTests */,
+			);
+			name = StashTests;
+			packageProductDependencies = (
+			);
+			productName = StashTests;
+			productReference = 3FB495882EDCEB92006B6AD5 /* StashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FA0B83D2EDAB431000346E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					3F25C7B92EE371C7009FDBD0 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 3FA0B8442EDAB431000346E4;
+					};
+					3FA0B8442EDAB431000346E4 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					3FB495872EDCEB92006B6AD5 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 3FA0B8442EDAB431000346E4;
+					};
+				};
+			};
+			buildConfigurationList = 3FA0B8402EDAB431000346E4 /* Build configuration list for PBXProject "Stash" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FA0B83C2EDAB431000346E4;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3F25C70B2EE0AB94009FDBD0 /* XCRemoteSwiftPackageReference "Nuke" */,
+				3F25C7102EE0AD81009FDBD0 /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3FA0B8462EDAB431000346E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FA0B8442EDAB431000346E4 /* Stash */,
+				3FB495872EDCEB92006B6AD5 /* StashTests */,
+				3F25C7B92EE371C7009FDBD0 /* StashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F25C7B82EE371C7009FDBD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA0B8432EDAB431000346E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB495862EDCEB92006B6AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F25C7B62EE371C7009FDBD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA0B8412EDAB431000346E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB495842EDCEB92006B6AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F25C7C12EE371C7009FDBD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA0B8442EDAB431000346E4 /* Stash */;
+			targetProxy = 3F25C7C02EE371C7009FDBD0 /* PBXContainerItemProxy */;
+		};
+		3FB4958D2EDCEB92006B6AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA0B8442EDAB431000346E4 /* Stash */;
+			targetProxy = 3FB4958C2EDCEB92006B6AD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F25C7C32EE371C7009FDBD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bigfootprint.dev.StashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stash;
+			};
+			name = Debug;
+		};
+		3F25C7C42EE371C7009FDBD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bigfootprint.dev.StashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stash;
+			};
+			name = Release;
+		};
+		3FA0B84E2EDAB433000346E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FA0B84F2EDAB433000346E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FA0B8512EDAB433000346E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bigfootprint.dev.Stash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FA0B8522EDAB433000346E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bigfootprint.dev.Stash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FB4958F2EDCEB92006B6AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bigfootprint.dev.StashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stash";
+			};
+			name = Debug;
+		};
+		3FB495902EDCEB92006B6AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bigfootprint.dev.StashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stash";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F25C7C22EE371C7009FDBD0 /* Build configuration list for PBXNativeTarget "StashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F25C7C32EE371C7009FDBD0 /* Debug */,
+				3F25C7C42EE371C7009FDBD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA0B8402EDAB431000346E4 /* Build configuration list for PBXProject "Stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA0B84E2EDAB433000346E4 /* Debug */,
+				3FA0B84F2EDAB433000346E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA0B8502EDAB433000346E4 /* Build configuration list for PBXNativeTarget "Stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA0B8512EDAB433000346E4 /* Debug */,
+				3FA0B8522EDAB433000346E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FB4958E2EDCEB92006B6AD5 /* Build configuration list for PBXNativeTarget "StashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB4958F2EDCEB92006B6AD5 /* Debug */,
+				3FB495902EDCEB92006B6AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F25C70B2EE0AB94009FDBD0 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		3F25C7102EE0AD81009FDBD0 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F25C70C2EE0AB94009FDBD0 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F25C70B2EE0AB94009FDBD0 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		3F25C70E2EE0AB94009FDBD0 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F25C70B2EE0AB94009FDBD0 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		3F25C7112EE0AD81009FDBD0 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F25C7102EE0AD81009FDBD0 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3FA0B83D2EDAB431000346E4 /* Project object */;
+}
