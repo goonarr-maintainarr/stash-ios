@@ -23,7 +23,7 @@ open Stash.xcodeproj
 
 **Configure your server:**
 1. Launch the app → Navigate to **Settings**
-2. Enter your Stash server URL (e.g., `http://192.168.1.100:9999/graphql`)
+2. Enter your Stash server URL (e.g., `http://stash.local:9999/graphql` or `https://stash.example.com/graphql`)
 3. Enter your API key (generate from Stash → Settings → Security)
 4. Tap **Test Connection**
 
@@ -93,9 +93,9 @@ open Stash.xcodeproj
 
 | Setting | Description | Example |
 |---------|-------------|---------|
-| **Stash URL** | GraphQL endpoint URL | `http://192.168.1.100:9999/graphql` |
+| **Stash URL** | GraphQL endpoint URL | `http://stash.local:9999/graphql` |
 | **API Key** | Authentication token | Generate in Stash → Settings → Security |
-| **Whisparr URL** | Whisparr server URL | `http://192.168.1.100:8787` |
+| **Whisparr URL** | Whisparr server URL | `http://whisparr.local:8787` |
 | **Whisparr API Key** | Whisparr authentication | Settings → General → API Key |
 | **StashDB API Key** | StashDB authentication | [stashdb.org](https://stashdb.org) account |
 

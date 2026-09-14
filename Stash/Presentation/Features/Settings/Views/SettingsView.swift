@@ -131,7 +131,7 @@ struct SettingsView: View {
                 }
             }
             
-            Section(header: Text("Server Connection"), footer: Text("Enter the full URL to your Stash GraphQL endpoint, e.g., http://192.168.1.100:9999/graphql")) {
+            Section(header: Text("Server Connection"), footer: Text("Enter the full URL to your Stash GraphQL endpoint, e.g., http://stash.local:9999/graphql or https://stash.example.com/graphql")) {
                 HStack {
                     TextField("Server URL", text: $store.serverUrl)
                         .keyboardType(.URL)
@@ -171,7 +171,7 @@ struct SettingsView: View {
     @ViewBuilder
     private var whisparrSection: some View {
         Group {
-            Section(header: Text("Whisparr Integration"), footer: Text("Enter your Whisparr server URL (e.g., http://192.168.1.100:8787) and API key. Root folders and quality profiles will be fetched automatically. The Whisparr tab will appear when both are configured.")) {
+            Section(header: Text("Whisparr Integration"), footer: Text("Enter your Whisparr server URL (e.g., http://whisparr.local:8787) and API key. Root folders and quality profiles will be fetched automatically. The Whisparr tab will appear when both are configured.")) {
                 HStack {
                     TextField("Whisparr URL", text: $store.whisparrUrl)
                         .keyboardType(.URL)

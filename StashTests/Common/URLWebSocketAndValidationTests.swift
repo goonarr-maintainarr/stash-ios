@@ -6,10 +6,10 @@ final class URLWebSocketAndValidationTests: XCTestCase {
     // MARK: - URL WebSocket Conversion Tests
     
     func testWebSocketURL_httpConvertsToWS() {
-        let httpURL = URL(string: "http://192.168.1.50:9999/graphql")!
+        let httpURL = URL(string: "http://stash.local:9999/graphql")!
         let wsURL = httpURL.webSocketURL
         XCTAssertEqual(wsURL.scheme, "ws")
-        XCTAssertEqual(wsURL.host, "192.168.1.50")
+        XCTAssertEqual(wsURL.host, "stash.local")
         XCTAssertEqual(wsURL.port, 9999)
         XCTAssertEqual(wsURL.path, "/graphql")
     }
