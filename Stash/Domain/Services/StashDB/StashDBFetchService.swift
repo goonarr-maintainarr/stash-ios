@@ -106,7 +106,7 @@ class StashDBFetchService: @unchecked Sendable {
     func searchPerformers(term: String, endpoint: String, apiKey: String) async throws -> [StashDBPerformer] {
         
         // Create a temporary client for this specific endpoint
-        let client = StashDBClient(apiKey: apiKey, baseURL: endpoint)
+        let client = await StashDBClient(apiKey: apiKey, baseURL: endpoint, settings: settings)
         
         do {
             let performers = try await client.searchPerformers(term: term)
@@ -160,7 +160,8 @@ class StashDBFetchService: @unchecked Sendable {
             return nil
         }
         
-        guard !settingsStore.stashDBApiKey.isEmpty else {
+        let apiKey = await settingsStore.stashDBApiKey
+        guard !apiKey.isEmpty else {
             logger.info("⏭️ No StashDB API key configured, skipping favorites fetch")
             return nil
         }
