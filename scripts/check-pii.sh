@@ -11,8 +11,8 @@ if git grep -EI "192\.168\.[0-9]+\.[0-9]+" -- ':!scripts/check-pii.sh' ':!AGENTS
     FAIL=1
 fi
 
-# 2. Check for personal emails
-if git grep -EI "[a-zA-Z0-9_.+-]+@(gmail|yahoo|hotmail|outlook)\.com" -- ':!scripts/check-pii.sh' ':!AGENTS.md' ':!.github/*'; then
+# 2. Check for personal emails (excluding official project email)
+if git grep -EI "[a-zA-Z0-9_.+-]+@(gmail|yahoo|hotmail|outlook)\.com" -- ':!scripts/check-pii.sh' ':!AGENTS.md' ':!.github/*' | grep -v "goonarrstash@gmail.com"; then
     echo "❌ Error: Found personal email address in tracked files!"
     FAIL=1
 fi

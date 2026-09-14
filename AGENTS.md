@@ -69,4 +69,4 @@ Any `.swift` file added inside `StashTests/` is automatically included in the te
    - Use `TestData.swift` extensions (`Scene.testScene()`, `Performer.testPerformer()`, `Stats.testStats()`) for test data creation.
 5. **Git Commit Hygiene**:
    - Use Conventional Commits (`feat:`, `fix:`, `test:`, `docs:`, `refactor:`).
-   - Maintain author identity: `Goonarr Maintainers <maintainers@goonarr.dev>`.
+   - Maintain author identity: `Goonarr Maintainers <goonarrstash@gmail.com>`.
